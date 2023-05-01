@@ -1,0 +1,30 @@
+package Day7;
+
+public class empWageUC4 {
+    public static void main(String[] args) {
+
+        final int partTime=1;
+        final int fullTime=2;
+        final int rate_hr=20;
+        int wage=0;
+        int hrs=0;
+        int cal=(int) (Math.floor(Math.random()*10)%3);
+
+        switch (cal){
+
+            case partTime:
+                hrs=4;
+                break;
+
+            case fullTime:
+                hrs=8;
+                break;
+
+            default:
+                hrs=0;
+        }
+        wage=hrs*rate_hr;
+        System.out.println("Employee Wage is : "+wage);
+
+    }
+}
