@@ -1,0 +1,23 @@
+package Day7;
+
+public class empWageUC5 {
+    public static void main(String[] args) {
+
+        int fullTime=1;
+        int rate_hr=20;
+        int wage=0;
+        int hrs=0;
+        double cal=Math.floor(Math.random()*10)%3;
+
+
+        if(cal == fullTime){
+            hrs=8;
+        }
+        else{
+            hrs=0;
+        }
+        wage=hrs*rate_hr;
+        int result = wage*30;
+        System.out.println("Employee Wage is : "+result);
+    }
+}
